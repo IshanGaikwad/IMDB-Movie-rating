@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IMDB Movies</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <section class="">
+	    <div class="gap">
+			<select class="countries" id="countries" style="">
+			</select>
+		</div>
+	    <div class="chart-container">
+		  <table align="center">
+		    <tr>
+				<td>
+					<svg id="pie">             <!-- Pie Chart SVG -->
+					</svg>
+				</td>
+				<td>
+					<svg id="area">             <!-- Area Chart SVG -->
+					</svg>
+				</td>
+				<td>
+					<svg id="bar">             <!-- Bar Chart SVG -->
+					</svg>
+				</td>
+			</tr>
+		  </table>
+        </div>
+    </section>
+	
+	<!-- JavaScripts -->
+	<script src="assets/jquery.min.js"></script>
+    <script src="assets/d3.v4.js"></script>   <!-- D3 Js Library -->
+	<script src="assets/pie.js"></script>
+	<script src="assets/area.js"></script>
+	<script src="assets/bar.js"></script>
+    <script src="assets/app2.js"></script> 
+</body>
+
+</html>

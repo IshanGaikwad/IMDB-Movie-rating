@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IMDB Movies</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+	<link rel="stylesheet" href="assets/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <section class="container">
+	    <div style="">
+			<svg id="map" style="">    <!-- Topojson Map SVG -->
+			</svg>
+			<p class="" style="margin: 0 auto;width:800px;"><span style="float:left;"><button type="button" id="zoom_inout">Zoom In/Out</button></span><span style="float:right;font-size:0.8em;">Click on a division to see its trends.</span></p>
+		</div>
+		<div class="">
+			<select class="" id="countries" style="">
+			</select>&nbsp;&nbsp;
+			<br>
+			<br>
+			<strong>Year: </strong> <span id="year-val"></span>
+			<input id="year" type="range" step="1"> <!-- Display Year Slider -->
+			<br>
+			<br>
+		</div>
+		<div style="text-align:left;padding:0px 35%;" class="gap">
+		  <span>
+			<input class="ratings" type="radio" name="ratings" value="hit"> Ratings above 9<br><br>
+		  </span>
+		  <span>
+		    <input class="ratings" type="radio" name="ratings" value="avg"> Ratings between 5 to 8<br><br>
+		  </span>
+		  <span>
+		    <input class="ratings" type="radio" name="ratings" value="all"> All Ratings
+		  </span>
+		</div>
+		<div>
+			<svg id="bar">             <!-- Bar Chart SVG -->
+            </svg>
+		</div>
+		<div>
+			<table id="imdb_dt" class="display" cellspacing="0" width="100%">
+				<thead>
+					<tr>
+						<th>Movie Title</th>
+						<th>Year</th>
+						<th>Director</th>
+						<!--<th>Stars</th>-->
+						<th>Country</th>
+						<!--<th>Genres</th>-->
+						<th>Language</th>
+						<th>Duration</th>
+						<th>Budget</th>
+						<th>Gross</th>
+						<th>Ratings</th>
+						<!--<th>IMDB</th>-->
+					</tr>
+				</thead>
+		 
+				<tfoot>
+					<tr>
+						<th>Movie Title</th>
+						<th>Year</th>
+						<th>Director</th>
+						<!--<th>Stars</th>-->
+						<th>Country</th>
+						<!--<th>Genres</th>-->
+						<th>Language</th>
+						<th>Duration</th>
+						<th>Budget</th>
+						<th>Gross</th>
+						<th>Ratings</th>
+						<!--<th>IMDB</th>-->
+					</tr>
+				</tfoot>
+		 
+				<tbody id="movies_list">
+				</tbody>
+			</table>
+		</div>
+    </section>
+	<div class="tooltip"></div>              <!-- Tooltip Container -->
+	<!-- JavaScripts -->
+	<script src="assets/jquery.min.js"></script>
+	<script src="assets/jquery.dataTables.min.js"></script>
+    <script src="assets/d3.v4.js"></script>   <!-- D3 Js Library -->
+	<script src="assets/d3-legend.min.js"></script>   <!-- D3 Map Legends Js Library -->
+	<script src="assets/topojson.js"></script>     <!-- Topojson Js Library -->
+	<script src="assets/bar.js"></script>      <!-- Js Code Functions for creating & drawing bar chart in SVG -->
+	<script src="assets/map.js"></script>      <!-- Js Code Functions for creating & drawing topojson map in SVG -->
+    <script src="assets/app.js"></script> 
+</body>
+
+</html>

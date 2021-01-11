@@ -1,0 +1,130 @@
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  .container {
+	margin: 0 50px;
+	text-align: center;
+  }
+  
+  .gap {
+	  margin: 20px;
+  }
+  
+  .tooltip {
+    opacity: 0.6;
+    position: absolute;
+    pointer-events: none;
+    border: 4px solid #2c3e50;
+    background-color: #ecf0f1;
+    padding: 10px;
+    border-radius: 6px;
+	font-size: 0.8em;
+  }
+  
+  .tooltip p {
+    margin: 2px;
+  }
+  
+  .tooltip:after {
+    content: ' ';
+    position: absolute;
+    left: 50%;
+    border: 8px solid transparent;
+    border-top-color: #2c3e50;
+    bottom: -18px;
+    margin-left: -4px;
+  }
+  
+  .county,.pointy {
+    stroke: none;
+  }
+  
+  .county:hover,.pointy:hover {
+    cursor: pointer;
+  }
+  
+  .county.active,.pointy.active {
+    stroke: #ff0000;
+    stroke-width: 1px;
+  }
+  
+  .y-axis-label {
+    font-size: 0.8em;
+  }
+  
+  .tick text {
+    font-size: 1.5em;
+  }
+  .no-margin {
+	  margin : 0px;
+  }
+  .background {
+	  fill: none;
+	  pointer-events: all;
+	}
+	.legendSize rect,
+    .legendSize circle {
+      fill: rgb(46, 73, 123);
+    }
+
+
+    .legendSizeHorz circle {
+      stroke: rgb(71, 187, 94);
+      fill: none;
+    }
+
+    .legendSizeLine line {
+      stroke: rgb(46, 73, 123);
+    }
+
+    .legendSymbol path {
+      fill: rgb(64, 108, 189);
+    }
+
+    .q0-8 {
+      fill: rgb(176, 223, 229);
+    }
+
+    .q1-8 {
+      fill: rgb(149, 200, 216);
+    }
+
+    .q2-8 {
+      fill: rgb(87, 160, 211);
+    }
+
+    .q3-8 {
+      fill: rgb(101, 147, 245);
+    }
+
+    .q4-8 {
+      fill: rgb(15, 82, 186);
+    }
+
+    .q5-8 {
+      fill: rgb(16, 52, 166);
+    }
+
+    .q6-8 {
+      fill: rgb(0, 0, 128);
+    }
+
+    .q7-8 {
+      fill: rgb(29, 41, 81);
+    }
+	
+	.axis path,
+	.axis line {
+	  fill: none;
+	  stroke: none;
+	  shape-rendering: crispEdges;
+	}
+
+	.browser text {
+	  text-anchor: end;
+	}
